@@ -2,7 +2,12 @@ import React from "react";
 import img from "./growth.png";
 
 const CompletedTodoes = ({ props }) => {
-  const { completedTodo } = props;
+  const { completedTodo, allTodoes, setallTodoes } = props;
+  const deleteTodo = (index) => {
+    const tempTodo = [...allTodoes];
+    tempTodo.splice(index, 1);
+    setallTodoes([...tempTodo]);
+  };
 
   console.log("wafefsegesgrsgrs", completedTodo);
 

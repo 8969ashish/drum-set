@@ -1,14 +1,28 @@
-import React from 'react'
+import React from "react";
 
-const ScheduledTodoes = ({props}) => {
+const ScheduledTodoes = ({ props }) => {
+  const { SheduledTodo, allTodoes, setallTodoes } = props;
 
-  const { SheduledTodo } = props;
+  const deleteTodo = (index) => {
+    
+    const selectedTodo = allTodoes[index];
+    const updatedTodo = {
+      ...selectedTodo,
+      completed: true,
+      date: "",
+      InProgress: "no",
+    };
 
-  
-  console.log(SheduledTodo)
+    const tempTodo = [...allTodoes];
+    tempTodo.splice(index, 1);
+    console.log("EGrgrggdrgrdgd", [...tempTodo, updatedTodo]);
+    setallTodoes([...tempTodo, updatedTodo]);
+  };
+
+  console.log(SheduledTodo);
   return (
     <div>
-       <div className=" py-10 ">
+      <div className=" py-10 ">
         <div className="w-[60%] bg-yellow-50 rounded-xl p-4 min-h-screen m-auto">
           {SheduledTodo?.map((item, index) => {
             return (
@@ -42,7 +56,7 @@ const ScheduledTodoes = ({props}) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ScheduledTodoes
+export default ScheduledTodoes;

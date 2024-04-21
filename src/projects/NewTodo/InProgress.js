@@ -1,11 +1,25 @@
 import React from "react";
-import img from "./growth.png"
+import img from "./growth.png";
 
 const InProgress = ({ props }) => {
-  const { inProgress } = props;
+  const { inProgress, allTodoes, setallTodoes } = props;
 
   console.log(inProgress);
-  
+
+  const deleteTodo = (index) => {
+    const selectedTodo = allTodoes[index];
+    const updatedTodo = {
+      ...selectedTodo,
+      completed: true,
+      date: "",
+      InProgress: "no",
+    };
+
+    const tempTodo = [...allTodoes];
+    tempTodo.splice(index, 1);
+    console.log("EGrgrggdrgrdgd", [...tempTodo, updatedTodo]);
+    setallTodoes([...tempTodo, updatedTodo]);
+  };
 
   return (
     <div>
