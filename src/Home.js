@@ -105,6 +105,15 @@ const Home = () => {
       languagesUsed: ["HTML", "tailwind", "React"],
       url: "/image_slider",
     },
+    {
+      id: 9,
+      title: "Drum set",
+      image: "https://images-cdn.ubuy.co.in/6355ece7ef4eb263382cff22-costzon-16-kids-drum-set-5-piece.jpg",
+      detail:
+        "A drum set . You can play it with mouse",
+      languagesUsed: ["HTML", "tailwind", "React"],
+      url: "/drum_set",
+    },
     // Add more projects as needed
   ];
 

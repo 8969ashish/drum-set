@@ -1,0 +1,63 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aqua;
+  }
+  
+  .App
+  {
+    justify-content: center;
+    height: 700px;
+    width: 500px;
+    background-color: rgb(6, 6, 6);
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+  .width
+  {
+    max-width: 35px;
+  }
+  .digit
+  {
+    min-width: 35px;
+    font-size: 60px;
+    background-color: rgb(51, 108, 173);
+    width: fit-content;
+    padding: 5px 22px;
+    color:white;
+    border-radius:10px;
+    /* box-shadow: rgba(12, 188, 227, 0.35) 5px 5px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    cursor:pointer;
+  }
+  
+  .digit:hover
+  {
+    background-color: rgb(50, 144, 231);
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 10px;
+  }
+  
+  .mytext
+  {
+    background-color: rgb(122, 104, 81);
+    width:88%;
+    height:100px;
+    margin-left:25px;
+    border-radius: 20px;
+    font-size: 70px;
+    text-align: right;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  }
+  .buttons
+  {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left:25px;
+  }

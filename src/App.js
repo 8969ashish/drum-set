@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import SmallTodoApp from "./projects/small_todo_project/SmallTodoApp";
 import ResponsiveNavbar from "./projects/small/responsive_navbar/ResponsiveNavbar";
 import NewTodo from "./projects/NewTodo/NewTodo";
+import DrumSet from "./projects/drum_set/DrumSet";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/todo/*" element={<NewTodo />} />
+        <Route path="/drum_set" element={<DrumSet />} />
 
         {/* <Route path="/calculator" element={<BmiCalculator />} /> */}
         {/* <Route path="/bmicalculator" element={<BmiCalculator />} /> */}
